@@ -292,7 +292,18 @@ main {
 
 @media only screen and (max-width: 425px) {
   .header {
-    padding: 0 16px;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .header__phone,
+  .header__email {
+    display: none;
+  }
+
+  .header__phone-icon,
+  .header__email-icon {
+    display: block;
   }
 
   .header__logo {
@@ -327,7 +338,8 @@ main {
 
   .card-grid {
     margin: 80px 20px 0;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 248px;
   }
 
   .card-grid__content {
@@ -386,16 +398,6 @@ main {
     width: 100%;
     height: 56px;
     gap: 20px;
-  }
-
-  .header__phone,
-  .header__email {
-    display: none;
-  }
-
-  .header__phone-icon,
-  .header__email-icon {
-    display: block;
   }
 
   main {
