@@ -72,7 +72,7 @@ main {
   width: 100%;
   max-width: 1440px;
   height: 546px;
-  background: center / 100% 100% no-repeat url("/src/resources/images/K4C 1 desktop.png"),
+  background: center / cover no-repeat url("/src/resources/images/K4C 1 desktop.png"),
     linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   display: flex;
   flex-direction: column;
@@ -307,7 +307,7 @@ main {
   .carousel {
     height: 364px;
     padding: 30px 0 0 20px;
-    background: center / 100% 100% no-repeat url("/src/resources/images/K4C 1 mobile.png"),
+    background: center / cover no-repeat url("/src/resources/images/K4C 1 mobile.png"),
       linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   }
 
@@ -405,8 +405,6 @@ main {
     width: 100%;
     height: 350px;
     padding: 16px 0 0 16px;
-    background: center / contain no-repeat url("/src/resources/images/K4C 1 mobile.png"),
-      linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   }
 
   .carousel__title {
@@ -487,8 +485,6 @@ main {
       width: 100%;
       height: 300px;
       padding: 12px 0 0 12px;
-      background: center / contain no-repeat url("/src/resources/images/K4C 1 mobile.png"),
-        linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
     }
   
     .carousel__title {
