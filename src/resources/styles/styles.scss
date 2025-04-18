@@ -72,7 +72,7 @@ main {
   width: 100%;
   max-width: 1440px;
   height: 546px;
-  background: center / cover no-repeat url("/src/resources/images/K4C 1 desktop.png"),
+  background: center / 100% 100% no-repeat url("/src/resources/images/K4C 1 desktop.png"),
     linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   display: flex;
   flex-direction: column;
@@ -245,19 +245,7 @@ main {
   justify-self: start;
 }
 
-@media only screen and (max-width: 1024px) {
-  .carousel {
-    background: center / cover no-repeat url("/src/resources/images/K4C 1 desktop.png"),
-      linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .carousel {
-    background: center / contain no-repeat url("/src/resources/images/K4C 1 mobile.png"),
-      linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
-    padding: 100px 0 0 100px;
-  }
   .card-grid {
     grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
   }
@@ -268,13 +256,11 @@ main {
 
   .footer__container {
     width: 492px;
-    height: auto;
     display: flex;
     padding: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
   }
 
   .footer__links {
@@ -292,18 +278,7 @@ main {
 
 @media only screen and (max-width: 425px) {
   .header {
-    padding: 0 20px;
-    gap: 16px;
-  }
-
-  .header__phone,
-  .header__email {
-    display: none;
-  }
-
-  .header__phone-icon,
-  .header__email-icon {
-    display: block;
+    padding: 0 16px;
   }
 
   .header__logo {
@@ -320,7 +295,7 @@ main {
   .carousel {
     height: 364px;
     padding: 30px 0 0 20px;
-    background: center / cover no-repeat url("/src/resources/images/K4C 1 mobile.png"),
+    background: center / 100% 100% no-repeat url("/src/resources/images/K4C 1 mobile.png"),
       linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   }
 
@@ -337,9 +312,8 @@ main {
   }
 
   .card-grid {
-    margin: 80px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    grid-auto-rows: 300px;
+    margin: 80px 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .card-grid__content {
@@ -350,11 +324,12 @@ main {
   .footer__container {
     width: 90%;
     max-width: 380px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 25px;
+    gap: 20px;
   }
 
   .footer__logo {
@@ -393,11 +368,21 @@ main {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   .header {
     width: 100%;
     height: 56px;
     gap: 20px;
+  }
+
+  .header__phone,
+  .header__email {
+    display: none;
+  }
+
+  .header__phone-icon,
+  .header__email-icon {
+    display: block;
   }
 
   main {
@@ -408,6 +393,8 @@ main {
     width: 100%;
     height: 350px;
     padding: 16px 0 0 16px;
+    background: center / contain no-repeat url("/src/resources/images/K4C 1 mobile.png"),
+      linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
   }
 
   .carousel__title {
@@ -433,9 +420,9 @@ main {
   }
 
   .card-grid {
-    margin: 40px 16px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-auto-rows: 220px;
+    margin: 40px 16px 0;
+    grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+    grid-auto-rows: 248px;
   }
 
   .card-grid__item {
@@ -459,7 +446,6 @@ main {
     width: 100%;
     max-width: 380px;
     padding: 16px;
-    gap: 20px;
   }
 
   @media only screen and (max-width: 320px) {
@@ -489,6 +475,8 @@ main {
       width: 100%;
       height: 300px;
       padding: 12px 0 0 12px;
+      background: center / contain no-repeat url("/src/resources/images/K4C 1 mobile.png"),
+        linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
     }
   
     .carousel__title {
@@ -517,7 +505,9 @@ main {
     }
   
     .card-grid {
-      margin: 32px 12px;
+      margin: 32px 12px 0;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-auto-rows: 220px;
       gap: 16px;
     }
   
@@ -559,7 +549,7 @@ main {
     .footer__container {
       width: 90%;
       max-width: 300px;
-      padding: 12px 0;
+      padding: 12px;
       gap: 16px;
     }
   
