@@ -268,12 +268,13 @@ main {
 
   .footer__container {
     width: 492px;
-    height: 70%;
+    height: auto;
     display: flex;
     padding: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
   }
 
   .footer__links {
@@ -337,12 +338,11 @@ main {
   .footer__container {
     width: 90%;
     max-width: 380px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 30px;
+    gap: 25px;
   }
 
   .footer__logo {
@@ -381,7 +381,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 375px) {
   .header {
     width: 100%;
     height: 56px;
@@ -457,6 +457,7 @@ main {
     width: 100%;
     max-width: 380px;
     padding: 16px;
+    gap: 20px;
   }
 
   @media only screen and (max-width: 320px) {
@@ -558,7 +559,7 @@ main {
     .footer__container {
       width: 90%;
       max-width: 300px;
-      padding: 12px;
+      padding: 12px 0;
       gap: 16px;
     }
   
