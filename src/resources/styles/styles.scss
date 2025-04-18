@@ -338,8 +338,8 @@ main {
 
   .card-grid {
     margin: 80px 20px 0;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 248px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-auto-rows: 300px;
   }
 
   .card-grid__content {
@@ -434,8 +434,8 @@ main {
 
   .card-grid {
     margin: 40px 16px 0;
-    grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
-    grid-auto-rows: 248px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 220px;
   }
 
   .card-grid__item {
@@ -518,8 +518,8 @@ main {
   
     .card-grid {
       margin: 32px 12px 0;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      grid-auto-rows: 220px;
+   /*    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-auto-rows: 220px; */
       gap: 16px;
     }
   
